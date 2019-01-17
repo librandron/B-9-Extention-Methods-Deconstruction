@@ -36,7 +36,7 @@ namespace Base_Lesson_9.Practice
         {
             var p = new DateDeconstract();
             var (_, _, _, hour, minute, second) = p;
-            Console.WriteLine($"time right now {hour}:{minute}:{second}");
+            Console.WriteLine($"time {hour}:{minute}:{second}");
             Console.ReadLine();
         }
 
