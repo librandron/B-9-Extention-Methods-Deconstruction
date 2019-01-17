@@ -49,14 +49,14 @@ namespace Base_Lesson_9.Practice
             int minute = DateTime.Now.Minute;
             int second = DateTime.Now.Second;
 
-            public void Deconstruct(out int a, out int b, out int c, out int d, out int e, out int f)
+            public void Deconstruct(out int year_1, out int month_1, out int day_1, out int hour_1, out int minute_1, out int second_1)
             {
-                a = year;
-                b = month;
-                c = day;
-                d = hour;
-                e = minute;
-                f = second;
+                year_1 = year;
+                month_1 = month;
+                day_1 = day;
+                hour_1 = hour;
+                minute_1 = minute;
+                second_1 = second;
             }
 
         }
