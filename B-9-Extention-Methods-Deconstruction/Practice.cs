@@ -16,9 +16,27 @@ namespace Base_Lesson_9.Practice
         /// </summary>
         public static void L9_P_EX_1_from_2()
         {
+            
+        }
+
+        
+
+
+
+
+
+        /// <summary>
+        /// L9-P-EX-2/2. 
+        /// Создать деконструктор для обьекта DateTime 
+        /// (год, месяц, день, час, минуты, секунды). 
+        /// Получить и вывести на консоль текущее время.
+        /// Использовать пустые параметры.
+        /// </summary>
+        public static void L9_P_EX_2_from_2()
+        {
             var p = new DateDeconstract();
-            var (_, _, _, hour, minute, secod) = p;
-            Console.WriteLine(hour);
+            var (_, _, _, hour, minute, second) = p;
+            Console.WriteLine($"time right now {hour}:{minute}:{second}");
             Console.ReadLine();
         }
 
@@ -40,22 +58,6 @@ namespace Base_Lesson_9.Practice
                 e = minute;
                 f = second;
             }
-
-        }
-
-
-
-
-
-        /// <summary>
-        /// L9-P-EX-2/2. 
-        /// Создать деконструктор для обьекта DateTime 
-        /// (год, месяц, день, час, минуты, секунды). 
-        /// Получить и вывести на консоль текущее время.
-        /// Использовать пустые параметры.
-        /// </summary>
-        public static void L9_P_EX_2_from_2()
-        {
 
         }
     }
