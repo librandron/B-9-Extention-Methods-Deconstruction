@@ -16,8 +16,36 @@ namespace Base_Lesson_9.Practice
         /// </summary>
         public static void L9_P_EX_1_from_2()
         {
+            var p = new DateDeconstract();
+            var (_, _, _, hour, minute, secod) = p;
+            Console.WriteLine(hour);
+            Console.ReadLine();
+        }
+
+        public class DateDeconstract
+        {
+            public int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
+            int day = DateTime.Now.Day;
+            int hour = DateTime.Now.Hour;
+            int minute = DateTime.Now.Minute;
+            int second = DateTime.Now.Second;
+
+            public void Deconstruct(out int a, out int b, out int c, out int d, out int e, out int f)
+            {
+                a = year;
+                b = month;
+                c = day;
+                d = hour;
+                e = minute;
+                f = second;
+            }
 
         }
+
+
+
+
 
         /// <summary>
         /// L9-P-EX-2/2. 
