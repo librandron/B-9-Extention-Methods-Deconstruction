@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Base_Lesson_9.extension;
 
 namespace Base_Lesson_9.Practice
 {
@@ -34,31 +35,28 @@ namespace Base_Lesson_9.Practice
         /// </summary>
         public static void L9_P_EX_2_from_2()
         {
-            var p = new DateDeconstract();
+            //var p = new DateDeconstract();
+           var p = DateTime.Now;
             var (_, _, _, hour, minute, second) = p;
             Console.WriteLine($"time {hour}:{minute}:{second}");
             Console.ReadLine();
         }
 
-        public class DateDeconstract
-        {
-            public int year = DateTime.Now.Year;
-            int month = DateTime.Now.Month;
-            int day = DateTime.Now.Day;
-            int hour = DateTime.Now.Hour;
-            int minute = DateTime.Now.Minute;
-            int second = DateTime.Now.Second;
+        //public class DateDeconstract
+        //{
+        //    int year = DateTime.Now.Year;
+        //    int month = DateTime.Now.Month;
+        //    int day = DateTime.Now.Day;
+        //    int hour = DateTime.Now.Hour;
+        //    int minute = DateTime.Now.Minute;
+        //    int second = DateTime.Now.Second;
 
-            public void Deconstruct(out int year_1, out int month_1, out int day_1, out int hour_1, out int minute_1, out int second_1)
-            {
-                year_1 = year;
-                month_1 = month;
-                day_1 = day;
-                hour_1 = hour;
-                minute_1 = minute;
-                second_1 = second;
-            }
+            
 
-        }
+
+        //}
+
+        
+
     }
 }
